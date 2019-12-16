@@ -10,7 +10,7 @@ object scalausecase {
   val y =10;
   val z= x*y;
   val z1 = x/y;
-  var a = 2000;
+  var a = 3000;
   
   println ("1.1 Multiply x*y = " +z);
   println ("1.2 Divid x/y = "+z1);
