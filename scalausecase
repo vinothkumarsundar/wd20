@@ -1,0 +1,66 @@
+package org.inceptez.scala.learn
+
+object scalausecase {
+  
+  def main(args:Array[String]) 
+  {  
+  println("Scala Usecase"); 
+  
+  val x=100;
+  val y =10;
+  val z= x*y;
+  val z1 = x/y;
+  var a = 2000;
+  
+  println ("1.1 Multiply x*y = " +z);
+  println ("1.2 Divid x/y = "+z1);
+  
+  a = a/y;
+  println ("2.1 Divid of a/y and newly assigned value to a = "+a);
+  
+  main1()
+  }
+  def main1()
+  {
+    
+    val sc:Any="org.apache.spark.SparkContext@4fbaa7f5";
+    val x:Int=100;
+    val y:String = x.toString();
+    val sc1=sc;
+    
+    println ("3. Assign x to y " +y);
+    println ("4. Assign sc to sc1 " +sc1);
+    
+    var a = "text";  //static definition
+    println ("5.1 Dynamic Inference String " +a);
+    { 
+    var a =100;
+    println ("5.2 Dynamic Inference Int " +a);
+    } 
+    val b:Int=1000; 
+    println ("5.3 Static Definition Int provided while declaring variable " +b)
+  
+    //greatest of 3 numbers
+    val num1 = 40;
+    val num2 = 50;
+    val num3 = 30;
+    
+    if (num1 > num2 )
+    {
+      if (num1 > num3 )
+      {
+          println ("Num1 is the greatest number "+num1);
+      }
+      else
+      {
+      println ("Num3 is the greatest number "+num3);
+      }
+    }
+    else if (num2> num3)
+    {
+      println ("Num2 is the greatest number "+num2);
+    }
+    else
+      println ("Num3 is the greatest number "+num3);
+  } 
+}
